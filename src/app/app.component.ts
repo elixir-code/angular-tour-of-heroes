@@ -13,23 +13,6 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-  	this.router.events
-  		.subscribe((event) => {
-  			if (event instanceof NavigationEnd)
-  			{	
-  				let quicklinks_data = {
-					  					quicklinks: {
-					  									url: window.location.href
-					  								}
-  									}
-
-  				//parent.postMessage(this.router.url, '*');
- 	 			parent.postMessage(quicklinks_data, '*');
- 	 			//parent.postMessage(window.location.href, '*');
- 	 			//alert(window.location.href);
-  			}
- 	 			
-  		});
   }
 
 }

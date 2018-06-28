@@ -14,6 +14,16 @@ export class DashboardComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
+    
+    let quicklinks_data = {
+      quicklinks: {
+        appid: 'Tour-of-Heroes',
+        subappid: 'dashboard'
+      }
+    };
+
+    parent.postMessage(quicklinks_data, 'http://localhost:4201');
+    
   	this.getHeroes();
   }
 
