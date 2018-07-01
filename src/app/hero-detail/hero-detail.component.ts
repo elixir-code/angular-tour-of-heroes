@@ -27,15 +27,15 @@ export class HeroDetailComponent implements OnInit {
     
     /*const id = +(this.route.snapshot.paramMap.get('id'));
     
-    // POST quicklinks data to MyWIPRO Portal
-    let quicklinks_data = {
-      quicklinks: {
+    // POST quickaction data to MyWIPRO Portal
+    let quickaction_data = {
+      quickaction: {
         appid: 'Tour-of-Heroes',
         subappid: `hero-detail/${id}`
       }
     };
 
-    parent.postMessage(quicklinks_data, 'http://localhost:4201');*/
+    parent.postMessage(quickaction_data, 'http://localhost:4201');*/
 
   	this.getHero();
   }

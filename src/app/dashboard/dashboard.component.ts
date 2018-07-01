@@ -15,14 +15,14 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     
-    let quicklinks_data = {
-      quicklinks: {
+    let quickaction_data = {
+      quickaction: {
         appid: 'Tour-of-Heroes',
         subappid: 'dashboard'
       }
     };
 
-    parent.postMessage(quicklinks_data, 'http://localhost:4201');
+    parent.postMessage(quickaction_data, 'http://localhost:4201');
     
   	this.getHeroes();
   }

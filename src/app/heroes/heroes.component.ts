@@ -22,14 +22,14 @@ export class HeroesComponent implements OnInit {
   ngOnInit() {
 
     // POST quicklinks data to MyWIPRO Portal
-    let quicklinks_data = {
-      quicklinks: {
+    let quickaction_data = {
+      quickaction: {
         appid: 'Tour-of-Heroes',
         subappid: 'heroes'
       }
     };
 
-    parent.postMessage(quicklinks_data, 'http://localhost:4201');
+    parent.postMessage(quickaction_data, 'http://localhost:4201');
 
     this.getHeroes();
   }
